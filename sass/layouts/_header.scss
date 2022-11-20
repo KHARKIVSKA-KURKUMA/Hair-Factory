@@ -1,0 +1,140 @@
+.header {
+  background: $desertStorm;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+    align-items: center;
+    @include desktop {
+      padding-top: 32px;
+    }
+  }
+}
+.header-logo {
+  fill: transparent;
+}
+.menu-open-btn {
+  background-color: transparent;
+  border: transparent;
+  align-items: center;
+  display: flex;
+  z-index: 1;
+  @include tablet {
+    display: none;
+  }
+}
+.open-menu-icon {
+  fill: $lightOrange;
+}
+// мобільне меню
+.header__menu__mobile {
+  position: fixed;
+  z-index: 122;
+  background-color: $desertStorm;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  @include tablet {
+    display: none;
+  }
+}
+.menu__close {
+  position: absolute;
+  border: transparent;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 10px 10px;
+  top: 22px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+}
+.menu__close__icon {
+  fill: $lightOrange;
+  transition: fill $transition;
+  .menu__close:focus & {
+    fill: $lightRed;
+  }
+}
+.js-menu-container {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px;
+}
+.header-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header-menu-link-nav {
+  padding: 15px 0;
+  @include text-base(null, 25px, 1.4);
+  color: $lightBlack;
+  text-transform: uppercase;
+  transition: color $transition;
+  &:focus {
+    color: $lightOrange;
+  }
+}
+.menu__enroll__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.header-menu-link {
+  @include text-base(null, 25px, 1.4);
+  color: $lightBlack;
+}
+.header-enroll-btn {
+  @include text-base(null, 25px, 1.4);
+  width: 230px;
+  height: 60px;
+  background-color: $lightOrange;
+  color: $desertStorm;
+}
+
+/* -------------------------------------------------------------------------- */
+.header-wrap {
+  display: none;
+  @include tablet {
+    display: flex;
+    align-items: center;
+  }
+}
+.header-list {
+  display: flex;
+  gap: 32px;
+  margin-right: 64px;
+}
+.header-link {
+  transition: color $transition;
+  &:hover,
+  &:focus {
+    color: $lightOrange;
+  }
+  @include text-base(null, 15px, 1.4);
+  color: $lightBlack;
+  @include tablet {
+    @include text-base(null, 12px, 1.4);
+  }
+  @include desktop {
+    @include text-base(null, 12px, 1.4);
+  }
+}
+.enroll-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.header-btn {
+  width: 137px;
+  @include text-base(null, 15px, 1.4);
+  height: 33px;
+  background-color: $lightOrange;
+  color: $desertStorm;
+  z-index: 1;
+}

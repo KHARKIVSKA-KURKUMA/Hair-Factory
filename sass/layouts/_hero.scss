@@ -1,0 +1,96 @@
+.hero {
+  background: $desertStorm;
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 64px;
+    position: relative;
+    @include desktop {
+      flex-direction: row;
+    }
+    @include desktop-2 {
+      justify-content: space-between;
+    }
+  }
+}
+.hero-star-1 {
+  transform: rotate(-165deg);
+  position: absolute;
+  top: -110px;
+  right: -180px;
+  @include desktop {
+    top: 80px;
+    right: -160px;
+  }
+  @include desktop-2 {
+    right: -100px;
+  }
+}
+.hero-star-2 {
+  transform: rotate(-7.48deg);
+  position: absolute;
+  bottom: 0;
+  left: -160px;
+  @include desktop {
+    left: -120px;
+  }
+  @include desktop {
+    left: -190px;
+  }
+}
+.hero-wrap {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include mobile {
+    margin-top: 60px;
+  }
+  @include desktop {
+    margin-right: 32px;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+}
+.hero-title {
+  font-family: 'Oranienbaum';
+  @include text-base(400, 32px, 0.85);
+  letter-spacing: -0.015em;
+  max-width: 593px;
+  margin-bottom: 15px;
+  text-align: center;
+  @include mobile {
+    @include text-base(400, 42px, 0.85);
+  }
+  @include desktop {
+    text-align: left;
+  }
+}
+.hero-desk {
+  @include text-base(null, 15px, 1.4);
+  color: $lightGreen;
+  margin-bottom: 32px;
+  text-align: center;
+  @include mobile {
+    @include text-base(null, 20px, 1.4);
+  }
+  @include desktop {
+    text-align: left;
+  }
+}
+.hero-btn {
+  background-color: $lightRed;
+  color: $desertStorm;
+  padding: 10px 40px;
+  z-index: 1;
+  @include mobile {
+    @include text-base(null, 25px, 1.4);
+  }
+  @include tablet {
+    @include text-base(null, 30px, 1.4);
+  }
+  @include desktop {
+    @include text-base(null, 25px, 1.4);
+  }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Flow+Circular&family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Oranienbaum&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body no-scroll>
+    <header class="header">
+      <div class="container">
+        <svg class="header-logo" width="48" height="55">
+          <use href="./img/icons.svg#icon-logo"></use>
+        </svg>
+        <div class="header-wrap">
+          <nav class="header-nav">
+            <ul class="header-list list">
+              <li class="header-item">
+                <a href="" class="header-link link">Services</a>
+              </li>
+              <li class="header-item">
+                <a href="" class="header-link link">Our work</a>
+              </li>
+              <li class="header-item">
+                <a href="" class="header-link link">Reviews</a>
+              </li>
+              <li class="header-item">
+                <a href="" class="header-link link">Stock</a>
+              </li>
+              <li class="header-item">
+                <a href="" class="header-link link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="enroll-info">
+            <a href="tel:+380961111111" class="header-link link">
+              +38 096 111 11 11</a
+            >
+            <button type="button" class="header-btn btn">Enroll</button>
+          </div>
+        </div>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="open-menu-icon" width="50" height="50">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- menu -->
+      <div class="header__menu__mobile is-hidden" data-menu>
+        <div class="js-menu-container">
+          <button type="button" class="menu__close" data-menu-close>
+            <svg class="menu__close__icon" width="30" height="30">
+              <use href="./img/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="header-menu-nav">
+            <ul class="header-menu-list list">
+              <li class="header-item">
+                <a href="" class="header-menu-link-nav link">Services</a>
+              </li>
+              <li class="header-item">
+                <a href="" class="header-menu-link-nav link">Our work</a>
+              </li>
+              <li class="header-item">
+                <a href="" class="header-menu-link-nav link">Reviews</a>
+              </li>
+              <li class="header-item">
+                <a href="" class="header-menu-link-nav link">Stock</a>
+              </li>
+              <li class="header-item">
+                <a href="" class="header-menu-link-nav link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu__enroll__container">
+            <a href="tel:+380961111111" class="header-menu-link link">
+              +38 096 111 11 11</a
+            >
+            <button type="button" class="header-enroll-btn btn">Enroll</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ----------------------------------------------------------------------- -->
+    <main>
+      <!-- -------------------------------- HERO --------------------------------- -->
+      <section class="hero">
+        <div class="container">
+          <svg class="hero-star-1" width="278" height="278">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop
+                  offset="0%"
+                  style="stop-color: #ffe3e3; stop-opacity: 1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: rgba(255, 255, 255); stop-opacity: 0"
+                />
+              </linearGradient>
+            </defs>
+            <use href="./img/icons.svg#icon-star" fill="url(#grad1)"></use>
+          </svg>
+          <svg class="hero-star-2" width="278" height="278">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop
+                  offset="0%"
+                  style="stop-color: #ffe3e3; stop-opacity: 1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: rgba(255, 255, 255); stop-opacity: 0"
+                />
+              </linearGradient>
+            </defs>
+            <use href="./img/icons.svg#icon-star" fill="url(#grad1)"></use>
+          </svg>
+          <div class="hero-wrap">
+            <h1 class="hero-title">50% discount on women's haircuts!</h1>
+            <p class="hero-desk">Price includes haircut, wash and styling</p>
+            <button type="button" class="hero-btn btn">More</button>
+          </div>
+          <img
+            class="hero-img"
+            srcset="./img/hero-img.png 1x, ./img/hero-img-2x.png 2x"
+            src="./img/hero-img.png"
+            alt="hero-img"
+            width="538"
+            height="538"
+          />
+        </div>
+      </section>
+    </main>
+    <script src="./js/menu-mob.js"></script>
+  </body>
+</html>
