@@ -5,12 +5,17 @@
     flex-direction: column-reverse;
     padding-top: 64px;
     position: relative;
+    padding-bottom: 64px;
     @include desktop {
       flex-direction: row;
     }
     @include desktop-2 {
       justify-content: space-between;
     }
+  }
+  img {
+    width: 538px;
+    height: 538px;
   }
 }
 .hero-star-1 {

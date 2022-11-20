@@ -282,6 +282,7 @@ body {
   flex-direction: column-reverse;
   padding-top: 64px;
   position: relative;
+  padding-bottom: 64px;
 }
 @media screen and (min-width: 1200px) {
   .hero .container {
@@ -292,6 +293,10 @@ body {
   .hero .container {
     justify-content: space-between;
   }
+}
+.hero img {
+  width: 538px;
+  height: 538px;
 }
 
 .hero-star-1 {
