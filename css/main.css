@@ -1422,16 +1422,16 @@ body {
 .map-container {
   border-radius: 72px;
   border: 5px solid #698079;
+  width: 290px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
   .map-container {
-    margin: 0 auto;
     width: 460px;
   }
 }
 @media screen and (min-width: 768px) {
   .map-container {
-    margin: 0 auto;
     width: 610px;
   }
 }/*# sourceMappingURL=main.css.map */
