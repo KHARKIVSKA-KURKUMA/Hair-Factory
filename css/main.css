@@ -505,6 +505,7 @@ body {
 .team .container {
   padding-bottom: 130px;
   position: relative;
+  padding-top: 64px;
 }
 
 .team-star-1 {
@@ -696,4 +697,225 @@ body {
   line-height: 1.4;
   text-align: center;
   padding-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .summary-desk {
+    padding-bottom: 0;
+  }
+}
+
+.services {
+  background: #efe6dd;
+}
+.services .container {
+  padding-top: 104px;
+  padding-bottom: 64px;
+}
+
+.services-title {
+  font-family: "Oranienbaum";
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 0.85;
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin-bottom: 15px;
+}
+
+.services-desk {
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #698079;
+  margin-bottom: 65px;
+}
+
+.carousel .owl-nav .owl-prev,
+.carousel .owl-nav .owl-next {
+  position: absolute;
+  cursor: pointer;
+  font-size: 60px !important;
+  color: #fff !important;
+  top: 0;
+  height: 100%;
+  width: 70px;
+  transition: 0.3s opacity ease;
+  opacity: 0.6;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel .owl-nav .owl-prev:hover,
+.carousel .owl-nav .owl-next:hover {
+  opacity: 1;
+}
+
+.carousel .owl-nav .owl-prev,
+.carousel .owl-nav .owl-prev:hover {
+  left: 0;
+}
+
+.carousel .owl-nav .owl-next,
+.carousel .owl-nav .owl-next:hover {
+  right: 0;
+}
+
+.sign {
+  background-color: #fff8f8;
+}
+.sign .container {
+  position: relative;
+  padding-top: 109px;
+  padding-bottom: 208px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .sign .container {
+    padding-top: 209px;
+  }
+}
+
+.sign-img-1 {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .sign-img-1 {
+    display: block;
+    width: 354px;
+    height: 354px;
+    border-radius: 50%;
+    border: 5px solid #698079;
+    position: absolute;
+    bottom: 0;
+    left: -80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sign-img-1 {
+    width: 404px;
+    height: 404px;
+    bottom: 64px;
+  }
+}
+
+.sign-img-2 {
+  display: block;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+  left: -90px;
+  border-radius: 50%;
+  border: 5px solid #698079;
+}
+@media screen and (min-width: 768px) {
+  .sign-img-2 {
+    left: 71%;
+    top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sign-img-2 {
+    width: 504px;
+    height: 504px;
+    top: 64px;
+    right: -200px;
+  }
+}
+
+.sign-wrap {
+  max-width: 270px;
+}
+@media screen and (min-width: 768px) {
+  .sign-wrap {
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sign-wrap {
+    max-width: 670px;
+    padding: 0 64px;
+  }
+}
+
+.sign-title {
+  font-family: "Oranienbaum";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 0.85;
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin-bottom: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .sign-title {
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 0.85;
+  }
+}
+
+.sign-desk {
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #698079;
+  margin-bottom: 26px;
+}
+
+.enroll-form {
+  position: relative;
+}
+
+.enroll-input {
+  background-color: transparent;
+  border: 1px solid #efe6dd;
+  height: 66px;
+  width: 280px;
+  border-radius: 24px;
+  display: inline-flex;
+  padding-left: 5px;
+  margin-bottom: 100px;
+  transition: border 300ms linear;
+}
+.enroll-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #b07875;
+}
+.enroll-input:hover, .enroll-input:focus {
+  border: 2px solid #d4b195;
+}
+@media screen and (min-width: 768px) {
+  .enroll-input {
+    width: 330px;
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .enroll-input {
+    margin-left: 56px;
+    padding-left: 15px;
+    width: 450px;
+  }
+}
+
+.enroll-form-btn {
+  position: absolute;
+  background: #d4b195;
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.4;
+  right: 0%;
+  bottom: 67%;
+  padding: 10px 34px;
+  z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .enroll-form-btn {
+    right: 10%;
+  }
 }/*# sourceMappingURL=main.css.map */
