@@ -618,4 +618,82 @@ body {
 
 .team-link {
   width: 320px;
+}
+
+.summary {
+  background-color: #fff8f8;
+}
+.summary .container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+@media screen and (min-width: 1200px) {
+  .summary .container {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .summary-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .summary-list {
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .summary-list {
+    flex-wrap: nowrap;
+  }
+}
+
+.summary-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 290px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .summary-wrap {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .summary-wrap {
+    width: 270px;
+    justify-content: space-evenly;
+  }
+}
+.summary-number {
+  font-family: "Oranienbaum";
+  font-size: 52px;
+  line-height: 0.85;
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .summary-number {
+    margin-bottom: 10px;
+    font-size: 72px;
+    line-height: 0.85;
+  }
+}
+
+.reset {
+  margin-bottom: 0;
+}
+
+.summary-desk {
+  font-size: 19px;
+  line-height: 1.4;
+  text-align: center;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */
