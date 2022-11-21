@@ -918,4 +918,68 @@ body {
   .enroll-form-btn {
     right: 10%;
   }
+}
+
+.reviews {
+  background-color: #fff8f8;
+}
+.reviews .container {
+  padding-top: 64px;
+  padding-bottom: 130px;
+}
+.reviews img {
+  height: 167px;
+  border-radius: 25px;
+}
+
+.reviews-title {
+  font-family: "Oranienbaum";
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 0.85;
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin-bottom: 64px;
+}
+
+.review-wrap {
+  height: 230px;
+  display: flex;
+  background-color: #e3d3bb;
+  align-items: flex-start;
+  padding: 32px;
+  border-radius: 30px;
+}
+
+.reviews-about {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+}
+
+.service-type {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #fff8f8;
+  max-width: 120px;
+  padding: 4px 35px;
+  background-color: #b07875;
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
+
+.another-type {
+  background-color: #698079;
+}
+
+.name-reviews {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #698079;
+  margin-bottom: 8px;
+}
+
+.review-text {
+  font-size: 15px;
+  line-height: 1.4;
 }/*# sourceMappingURL=main.css.map */

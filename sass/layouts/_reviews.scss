@@ -1,0 +1,51 @@
+.reviews {
+  background-color: $bgColor;
+  .container {
+    padding-top: 64px;
+    padding-bottom: 130px;
+  }
+  img {
+    height: 167px;
+    border-radius: 25px;
+  }
+}
+.reviews-title {
+  font-family: 'Oranienbaum';
+  @include text-base(400, 72px, 0.85);
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin-bottom: 64px;
+}
+.review-wrap {
+  height: 230px;
+  display: flex;
+  background-color: $lightBrown;
+  align-items: flex-start;
+  padding: 32px;
+  border-radius: 30px;
+}
+.reviews-about {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+}
+.service-type {
+  @include text-base(null, 12px, 1.4);
+  color: $bgColor;
+  max-width: 120px;
+  padding: 4px 35px;
+  background-color: $lightRed;
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
+.another-type {
+  background-color: $lightGreen;
+}
+.name-reviews {
+  @include text-base(null, 20px, 1.4);
+  color: $lightGreen;
+  margin-bottom: 8px;
+}
+.review-text {
+  @include text-base(null, 15px, 1.4);
+}
