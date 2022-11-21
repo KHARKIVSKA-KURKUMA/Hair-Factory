@@ -1,0 +1,121 @@
+.consultation {
+  background-color: $desertStorm;
+  .container {
+    padding-top: 64px;
+    padding-bottom: 62px;
+    position: relative;
+    @include desktop {
+      display: flex;
+    }
+  }
+  img {
+    border-radius: 60px;
+    border: 5px solid $lightGreen;
+    @include desktop {
+      width: 500px;
+      height: 500px;
+    }
+  }
+}
+.consultation-star {
+  display: none;
+  @include desktop {
+    display: block;
+    transform: rotate(-135deg);
+    position: absolute;
+    top: 95px;
+    right: -130px;
+  }
+  @include desktop-2 {
+    top: 80px;
+    right: 0;
+  }
+}
+.consultation-wrap {
+  margin-top: 40px;
+  @include desktop {
+    margin-left: 100px;
+    margin-top: 0;
+  }
+}
+.consultation-title {
+  font-family: 'Oranienbaum';
+  @include text-base(400, 42px, 0.85);
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin-bottom: 15px;
+  @include tablet {
+    @include text-base(400, 72px, 0.85);
+  }
+}
+.consultation-label {
+  @include text-base(700, 15px, 1.4);
+  color: $lightGreen;
+  margin-bottom: 32px;
+  display: block;
+  @include tablet {
+    @include text-base(700, 20px, 1.4);
+    text-align: center;
+  }
+  @include desktop {
+    text-align: left;
+  }
+}
+.communication-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  @include tablet {
+    align-items: center;
+  }
+  @include desktop {
+    align-items: flex-start;
+  }
+}
+.communication-input {
+  background-color: transparent;
+  border: 2px solid $lightOrange;
+  height: 66px;
+  width: 280px;
+  border-radius: 24px;
+  padding-left: 5px;
+  transition: border $transition;
+  &::placeholder {
+    @include text-base(null, 16px, 1.25);
+  }
+  @include mobile {
+    width: 100%;
+    padding-left: 10px;
+  }
+  @include tablet {
+    width: 430px;
+  }
+  @include desktop {
+    padding-left: 15px;
+    width: 400px;
+  }
+}
+.form-input-question {
+  width: 100%;
+  height: 120px;
+  background-color: transparent;
+  border: 2px solid $lightOrange;
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  transition: outline-color $transition;
+  border-radius: 24px;
+  @include tablet {
+    width: 530px;
+  }
+  @include desktop {
+    width: 100%;
+  }
+}
+.consultation-btn {
+  padding: 6px 34px;
+  background-color: $lightRed;
+  color: $bgColor;
+  @include text-base(null, 20px, 1.4);
+}

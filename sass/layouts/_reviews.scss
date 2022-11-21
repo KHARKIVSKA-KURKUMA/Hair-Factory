@@ -3,10 +3,37 @@
   .container {
     padding-top: 64px;
     padding-bottom: 130px;
+    position: relative;
   }
   img {
     height: 167px;
     border-radius: 25px;
+  }
+}
+.reviews-star-1 {
+  transform: rotate(-135deg);
+  position: absolute;
+  top: 0px;
+  left: -190px;
+  @include desktop {
+    top: 0;
+    left: -150px;
+  }
+  @include desktop-2 {
+    left: -140px;
+  }
+}
+.reviews-star-2 {
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 0;
+  right: -160px;
+  @include desktop {
+    bottom: 0;
+    right: -120px;
+  }
+  @include desktop-2 {
+    right: 0;
   }
 }
 .reviews-title {
@@ -48,4 +75,30 @@
 }
 .review-text {
   @include text-base(null, 15px, 1.4);
+}
+.carousel .owl-nav .owl-prev,
+.carousel .owl-nav .owl-next {
+  position: absolute;
+  cursor: pointer;
+  font-size: 60px !important;
+  color: #fff !important;
+  top: 0;
+  height: 100%;
+  width: 70px;
+  transition: 0.3s opacity ease;
+  opacity: 0.6;
+  margin: 0;
+  padding: 0;
+}
+.carousel .owl-nav .owl-prev:hover,
+.carousel .owl-nav .owl-next:hover {
+  opacity: 1;
+}
+.carousel .owl-nav .owl-prev,
+.carousel .owl-nav .owl-prev:hover {
+  left: 0;
+}
+.carousel .owl-nav .owl-next,
+.carousel .owl-nav .owl-next:hover {
+  right: 0;
 }

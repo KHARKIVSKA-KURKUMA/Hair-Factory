@@ -38,7 +38,7 @@ $owl.owlCarousel({
 //   },
 // });
 $('.owl-carousel').owlCarousel({
-  margin: 30,
+  margin: 20,
   loop: true,
   autoWidth: true,
   items: 4,
