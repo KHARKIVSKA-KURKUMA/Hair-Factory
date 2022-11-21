@@ -1,0 +1,90 @@
+.team {
+  background: $desertStorm;
+  .container {
+    padding-bottom: 130px;
+    position: relative;
+  }
+}
+.team-star-1 {
+  transform: rotate(-7.48deg);
+  position: absolute;
+  top: 0px;
+  left: -150px;
+  @include desktop {
+    top: 0;
+    left: -150px;
+  }
+  @include desktop-2 {
+    left: -140px;
+  }
+}
+.team-star-2 {
+  transform: rotate(-165deg);
+  position: absolute;
+  bottom: 0;
+  right: -140px;
+  @include desktop {
+    bottom: 0;
+    right: -120px;
+  }
+  @include desktop-2 {
+    right: 0;
+  }
+}
+.team-title {
+  font-family: 'Oranienbaum';
+  @include text-base(400, 72px, 0.85);
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin-bottom: 15px;
+}
+.team-desk {
+  @include text-base(null, 20px, 1.4);
+  text-align: center;
+  color: $lightGreen;
+  margin-bottom: 64px;
+}
+.team-about {
+  position: absolute;
+  bottom: 70px;
+  background: #fff8f8;
+  border-radius: 24px;
+  width: 127%;
+  min-width: 230px;
+  max-width: 316px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  @include mobile {
+    width: 110%;
+    max-width: 200%;
+  }
+  @include tablet {
+    width: 114%;
+  }
+  @include desktop {
+    width: 100%;
+  }
+}
+.team-name {
+  font-family: 'Montserrat';
+  @include text-base(null, 20px, 1.4);
+  color: $lightBlack;
+  margin-bottom: 10px;
+}
+.about-her {
+  @include text-base(null, 15px, 1.4);
+  color: $lightBlack;
+  margin-bottom: 30px;
+}
+.team-btn {
+  @include text-base(700, 15px, 1.4);
+  background: $lightOrange;
+  padding: 7px 44px;
+}
+.team-link {
+  width: 320px;
+}

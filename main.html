@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
   </head>
   <body no-scroll>
     <header class="header">
@@ -145,7 +146,95 @@
           />
         </div>
       </section>
+      <section class="team">
+        <div class="container">
+          <svg class="team-star-1" width="278" height="278">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop
+                  offset="0%"
+                  style="stop-color: #ffe3e3; stop-opacity: 1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: rgba(255, 255, 255); stop-opacity: 0"
+                />
+              </linearGradient>
+            </defs>
+            <use href="./img/icons.svg#icon-star" fill="url(#grad1)"></use>
+          </svg>
+          <svg class="team-star-2" width="278" height="278">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop
+                  offset="0%"
+                  style="stop-color: #ffe3e3; stop-opacity: 1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: rgba(255, 255, 255); stop-opacity: 0"
+                />
+              </linearGradient>
+            </defs>
+            <use href="./img/icons.svg#icon-star" fill="url(#grad1)"></use>
+          </svg>
+          <h2 class="team-title">Our masters</h2>
+          <p class="team-desk">
+            Hairdressers-colorists with 10+ years of experience
+          </p>
+          <div class="carousel-2 owl-carousel">
+            <a href="#link" class="team-link link">
+              <div class="owl-pic">
+                <img
+                  src="./img/ksenia.jpg"
+                  alt="ksenia"
+                  width="417"
+                  height="370"
+                />
+              </div>
+              <div class="team-about">
+                <h3 class="team-name">Ksenia Boltushkina</h3>
+                <p class="about-her">hairdressing technologist</p>
+                <button type="btn" class="team-btn btn">Sign up</button>
+              </div>
+            </a>
+            <a href="#link" class="team-link link">
+              <div class="owl-pic">
+                <img
+                  src="./img/natasha.jpg"
+                  alt="natasha"
+                  width="417"
+                  height="370"
+                />
+              </div>
+              <div class="team-about">
+                <h3 class="team-name">Natasha Uglova</h3>
+                <p class="about-her">hairdressing technologist</p>
+                <button type="btn" class="team-btn btn">Sign up</button>
+              </div>
+            </a>
+            <a href="#link" class="team-link link">
+              <div class="owl-pic">
+                <img
+                  src="./img/violeta.jpg"
+                  alt="violeta"
+                  width="417"
+                  height="370"
+                />
+              </div>
+              <div class="team-about">
+                <h3 class="team-name">Violetta Shurygina</h3>
+                <p class="about-her">hairdressing technologist</p>
+                <button type="btn" class="team-btn btn">Sign up</button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/slider.js"></script>
     <script src="./js/menu-mob.js"></script>
   </body>
 </html>
