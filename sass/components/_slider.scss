@@ -1,0 +1,66 @@
+.carousel-2 .owl-item {
+  padding: 10px 0 30px 0;
+}
+.carousel-2 .owl-pic {
+  background: $lightOrange;
+  margin: 40px 0;
+  border: 1px solid $lightOrange;
+  border-top: 2px solid $lightOrange;
+  border-bottom: 2px solid $lightOrange;
+  transition: all 0.4s ease;
+  height: 350px;
+  position: relative;
+  z-index: 1;
+}
+.carousel-2 .owl-item.center .owl-pic {
+  opacity: 1;
+  border: 2px solid $lightOrange;
+  margin: 0 -5% 35% 0;
+  width: 320px;
+  height: 370px;
+  z-index: -1;
+  @include mobile {
+    width: 342px;
+  }
+}
+.carousel-2 .owl-item.center + .owl-item {
+  position: relative;
+  z-index: -1;
+}
+.carousel-2 .owl-pic img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s opacity ease, 0.3s transform ease;
+  opacity: 0.6;
+  object-fit: cover;
+}
+.carousel-2 .owl-item .owl-pic:hover img,
+.carousel-2 .owl-item.center .owl-pic img {
+  opacity: 1;
+}
+.carousel-2 .owl-nav .owl-prev,
+.carousel-2 .owl-nav .owl-next {
+  position: absolute;
+  cursor: pointer;
+  font-size: 60px !important;
+  color: #fff !important;
+  top: 0;
+  height: 100%;
+  width: 70px;
+  transition: 0.3s opacity ease;
+  opacity: 0.6;
+  margin: 0;
+  padding: 0;
+}
+.carousel-2 .owl-nav .owl-prev:hover,
+.carousel-2 .owl-nav .owl-next:hover {
+  opacity: 1;
+}
+.carousel-2 .owl-nav .owl-prev,
+.carousel-2 .owl-nav .owl-prev:hover {
+  left: 0;
+}
+.carousel-2 .owl-nav .owl-next,
+.carousel-2 .owl-nav .owl-next:hover {
+  right: 0;
+}

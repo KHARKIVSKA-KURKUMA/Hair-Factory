@@ -1,0 +1,52 @@
+.mini-portfolio {
+  background-color: $bgColor;
+  .container {
+    padding-top: 64px;
+    padding-bottom: 164px;
+  }
+  img {
+    border-radius: 25px;
+  }
+}
+.mini-portfolio-title {
+  font-family: 'Oranienbaum';
+  @include text-base(400, 42px, 0.85);
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin: 0 auto 64px;
+  @include desktop {
+    @include text-base(400, 62px, 0.85);
+    max-width: 585px;
+  }
+}
+.mini-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.carousel .owl-nav .owl-prev,
+.carousel .owl-nav .owl-next {
+  position: absolute;
+  cursor: pointer;
+  font-size: 60px !important;
+  color: $desertStorm !important;
+  top: 0;
+  height: 100%;
+  width: 70px;
+  transition: 0.3s opacity ease;
+  opacity: 0.6;
+  margin: 0;
+  padding: 0;
+}
+.carousel .owl-nav .owl-prev:hover,
+.carousel .owl-nav .owl-next:hover {
+  opacity: 1;
+}
+.carousel .owl-nav .owl-prev,
+.carousel .owl-nav .owl-prev:hover {
+  left: 0;
+}
+.carousel .owl-nav .owl-next,
+.carousel .owl-nav .owl-next:hover {
+  right: 0;
+}

@@ -1,0 +1,122 @@
+.sign {
+  background-color: $bgColor;
+  .container {
+    position: relative;
+    padding-top: 109px;
+    padding-bottom: 208px;
+    display: flex;
+    justify-content: center;
+    @include tablet {
+      padding-top: 209px;
+    }
+  }
+}
+.sign-img-1 {
+  display: none;
+  @include tablet {
+    display: block;
+    width: 354px;
+    height: 354px;
+    border-radius: 50%;
+    border: 5px solid $lightGreen;
+    position: absolute;
+    bottom: 0;
+    left: -80px;
+  }
+  @include desktop {
+    width: 404px;
+    height: 404px;
+    bottom: 64px;
+  }
+}
+.sign-img-2 {
+  display: block;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+  left: -90px;
+  border-radius: 50%;
+  border: 5px solid $lightGreen;
+  @include tablet {
+    left: 71%;
+    top: 0;
+  }
+  @include desktop {
+    width: 504px;
+    height: 504px;
+    top: 64px;
+    right: -200px;
+  }
+}
+.sign-wrap {
+  max-width: 270px;
+  @include tablet {
+    max-width: 350px;
+  }
+  @include desktop {
+    max-width: 670px;
+    padding: 0 64px;
+  }
+}
+.sign-title {
+  font-family: 'Oranienbaum';
+  @include text-base(400, 32px, 0.85);
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin-bottom: 14px;
+  @include desktop {
+    @include text-base(400, 62px, 0.85);
+  }
+}
+.sign-desk {
+  font-family: 'Montserrat';
+  @include text-base(null, 20px, 1.4);
+  text-align: center;
+  color: $lightGreen;
+  margin-bottom: 26px;
+}
+.enroll-form {
+  position: relative;
+}
+.enroll-input {
+  background-color: transparent;
+  border: 1px solid $desertStorm;
+  height: 66px;
+  width: 280px;
+  border-radius: 24px;
+  display: inline-flex;
+  padding-left: 5px;
+  margin-bottom: 100px;
+  transition: border $transition;
+  &::placeholder {
+    @include text-base(null, 16px, 1.25);
+    color: $lightRed;
+  }
+  &:hover,
+  &:focus {
+    border: 2px solid $lightOrange;
+  }
+  @include tablet {
+    width: 330px;
+    padding-left: 10px;
+  }
+  @include desktop {
+    margin-left: 56px;
+    padding-left: 15px;
+    width: 450px;
+  }
+}
+.enroll-form-btn {
+  position: absolute;
+  background: $lightOrange;
+  border-radius: 24px;
+  @include text-base(700, 15px, 1.4);
+  right: 0%;
+  bottom: 67%;
+  padding: 10px 34px;
+  z-index: 2;
+  @include tablet {
+    right: 10%;
+  }
+}

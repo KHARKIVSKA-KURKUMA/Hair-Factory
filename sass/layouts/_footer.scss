@@ -1,0 +1,102 @@
+.footer {
+  background: $desertStorm;
+  .container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+.footer-title {
+  font-family: 'Oranienbaum';
+  @include text-base(400, 52px, 0.85);
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin-bottom: 64px;
+  @include desktop {
+    @include text-base(400, 72px, 0.85);
+  }
+}
+.meta-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include desktop {
+    display: block;
+    margin-right: 104px;
+  }
+}
+.meta-desk {
+  @include text-base(null, 15px, 1.4);
+  margin-bottom: 4px;
+}
+.meta-inf {
+  @include text-base(700, 20px, 1.4);
+  margin-bottom: 16px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.meta-contact {
+  @include text-base(700, 20px, 1.4);
+  color: $lightBlack;
+  margin-bottom: 16px;
+  display: block;
+}
+.meta-soc {
+  margin-top: 32px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 40px;
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+.meta-soc-link {
+  border: 1px solid $lightBlack;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border $transition;
+  &:hover,
+  &:focus {
+    border: 1px solid $lightRed;
+  }
+}
+.meta-soc-icon {
+  transition: fill $transition;
+  .meta-soc-link &:hover,
+  .meta-soc-link &:focus {
+    fill: $lightRed;
+  }
+}
+.map {
+  border-radius: 72px;
+  width: 280px;
+  @include mobile {
+    width: 450px;
+  }
+  @include tablet {
+    width: 600px;
+  }
+}
+.map-container {
+  border-radius: 72px;
+  border: 5px solid $lightGreen;
+  @include mobile {
+    margin: 0 auto;
+    width: 460px;
+  }
+  @include tablet {
+    margin: 0 auto;
+    width: 610px;
+  }
+}
