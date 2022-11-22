@@ -54,6 +54,9 @@
   background-color: $lightRed;
   border-radius: 24px;
   margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .another-type {
   background-color: $lightGreen;
@@ -64,7 +67,7 @@
   margin-bottom: 8px;
 }
 .review-text {
-  @include text-base(null, 15px, 1.4);
+  @include text-base(null, 13px, 1.4);
 }
 .carousel .owl-nav .owl-prev,
 .carousel .owl-nav .owl-next {
