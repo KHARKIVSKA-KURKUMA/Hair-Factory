@@ -1,6 +1,7 @@
 .footer {
   background: $desertStorm;
   .container {
+    background: $desertStorm;
     padding-top: 64px;
     padding-bottom: 64px;
     display: flex;
@@ -81,22 +82,30 @@
 .map {
   border-radius: 72px;
   width: 280px;
+  height: 390px;
   @include mobile {
     width: 450px;
   }
   @include tablet {
     width: 600px;
   }
+  @include desktop {
+    height: 518px;
+  }
 }
 .map-container {
   border-radius: 72px;
   border: 5px solid $lightGreen;
   width: 290px;
+  height: 400px;
   margin: 0 auto;
   @include mobile {
     width: 460px;
   }
   @include tablet {
     width: 610px;
+  }
+  @include desktop {
+    height: 528px;
   }
 }

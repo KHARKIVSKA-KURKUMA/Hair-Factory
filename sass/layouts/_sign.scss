@@ -7,6 +7,10 @@
     display: flex;
     justify-content: center;
     @include tablet {
+      padding-top: 309px;
+      padding-bottom: 308px;
+    }
+    @include desktop {
       padding-top: 209px;
     }
   }
@@ -15,18 +19,23 @@
   display: none;
   @include tablet {
     display: block;
-    width: 354px;
-    height: 354px;
     border-radius: 50%;
     border: 5px solid $lightGreen;
     position: absolute;
     bottom: 0;
-    left: -80px;
+    left: 0;
+    width: 380px;
+    height: 380px;
   }
   @include desktop {
-    width: 404px;
-    height: 404px;
     bottom: 64px;
+    width: 400px;
+    height: 400px;
+  }
+  @include desktop-2 {
+    width: 500px;
+    height: 500px;
+    bottom: 0;
   }
 }
 .sign-img-2 {
@@ -35,24 +44,28 @@
   height: 300px;
   position: absolute;
   bottom: 0;
-  left: -90px;
   border-radius: 50%;
   border: 5px solid $lightGreen;
   @include tablet {
-    left: 71%;
+    right: 0;
     top: 0;
   }
   @include desktop {
-    width: 504px;
-    height: 504px;
+    width: 304px;
+    height: 304px;
     top: 64px;
-    right: -200px;
+    right: 10px;
+  }
+  @include desktop-2 {
+    width: 420px;
+    height: 420px;
+    top: 20px;
   }
 }
 .sign-wrap {
   max-width: 270px;
   @include tablet {
-    max-width: 350px;
+    max-width: 450px;
   }
   @include desktop {
     max-width: 670px;
@@ -65,6 +78,9 @@
   text-align: center;
   letter-spacing: -0.015em;
   margin-bottom: 14px;
+  @include tablet {
+    @include text-base(400, 52px, 0.85);
+  }
   @include desktop {
     @include text-base(400, 62px, 0.85);
   }
@@ -98,7 +114,7 @@
     border: 2px solid $lightOrange;
   }
   @include tablet {
-    width: 330px;
+    width: 430px;
     padding-left: 10px;
   }
   @include desktop {

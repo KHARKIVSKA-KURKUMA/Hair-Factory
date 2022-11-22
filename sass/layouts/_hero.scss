@@ -1,5 +1,8 @@
 .hero {
   background: $desertStorm;
+  img {
+    z-index: 1;
+  }
   .container {
     display: flex;
     flex-direction: column-reverse;
@@ -19,28 +22,28 @@
   }
 }
 .hero-star-1 {
-  transform: rotate(-165deg);
   position: absolute;
-  top: -110px;
-  right: -180px;
+  top: 0;
+  right: 0;
   @include desktop {
-    top: 80px;
-    right: -160px;
+    top: 0;
+    right: 0;
   }
   @include desktop-2 {
-    right: -100px;
+    top: 0;
+    right: 0;
   }
 }
 .hero-star-2 {
   transform: rotate(-7.48deg);
   position: absolute;
   bottom: 0;
-  left: -160px;
+  left: 0px;
   @include desktop {
-    left: -120px;
+    left: 0px;
   }
   @include desktop {
-    left: -190px;
+    left: 0px;
   }
 }
 .hero-wrap {

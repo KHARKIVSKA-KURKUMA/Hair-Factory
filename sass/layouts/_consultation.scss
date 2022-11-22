@@ -1,6 +1,7 @@
 .consultation {
   background-color: $desertStorm;
   .container {
+    background-color: $desertStorm;
     padding-top: 64px;
     padding-bottom: 62px;
     position: relative;
@@ -21,10 +22,9 @@
   display: none;
   @include desktop {
     display: block;
-    transform: rotate(-135deg);
     position: absolute;
-    top: 95px;
-    right: -130px;
+    top: 166px;
+    right: 0px;
   }
   @include desktop-2 {
     top: 80px;
@@ -77,16 +77,12 @@
   background-color: transparent;
   border: 2px solid $lightOrange;
   height: 66px;
-  width: 280px;
+  width: 100%;
   border-radius: 24px;
-  padding-left: 5px;
+  padding-left: 10px;
   transition: border $transition;
   &::placeholder {
     @include text-base(null, 16px, 1.25);
-  }
-  @include mobile {
-    width: 100%;
-    padding-left: 10px;
   }
   @include tablet {
     width: 430px;
@@ -118,4 +114,8 @@
   background-color: $lightRed;
   color: $bgColor;
   @include text-base(null, 20px, 1.4);
+  margin: 0 auto;
+  @include desktop {
+    margin: 0;
+  }
 }

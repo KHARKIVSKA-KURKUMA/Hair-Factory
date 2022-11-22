@@ -1,5 +1,11 @@
-.carousel-2 .owl-item {
-  padding: 10px 0 30px 0;
+.carousel-2 {
+  .owl-item {
+    padding: 10px 0 30px 0;
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
 }
 .carousel-2 .owl-pic {
   background: $lightOrange;
@@ -7,6 +13,7 @@
   border: 1px solid $lightOrange;
   border-top: 2px solid $lightOrange;
   border-bottom: 2px solid $lightOrange;
+  border-radius: 24px;
   transition: all 0.4s ease;
   height: 350px;
   position: relative;
@@ -51,6 +58,10 @@
   opacity: 0.6;
   margin: 0;
   padding: 0;
+  display: none;
+  @include desktop {
+    display: block;
+  }
 }
 .carousel-2 .owl-nav .owl-prev:hover,
 .carousel-2 .owl-nav .owl-next:hover {

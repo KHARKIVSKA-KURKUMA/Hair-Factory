@@ -11,30 +11,20 @@
   }
 }
 .reviews-star-1 {
-  transform: rotate(-135deg);
-  position: absolute;
-  top: 0px;
-  left: -190px;
-  @include desktop {
-    top: 0;
-    left: -150px;
+  display: none;
+  @include tablet {
+    position: absolute;
+    top: 35px;
+    display: block;
   }
   @include desktop-2 {
-    left: -140px;
+    left: 0px;
   }
 }
 .reviews-star-2 {
-  transform: rotate(-45deg);
   position: absolute;
   bottom: 0;
-  right: -160px;
-  @include desktop {
-    bottom: 0;
-    right: -120px;
-  }
-  @include desktop-2 {
-    right: 0;
-  }
+  right: 0;
 }
 .reviews-title {
   font-family: 'Oranienbaum';
