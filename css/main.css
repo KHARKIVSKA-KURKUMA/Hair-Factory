@@ -427,7 +427,6 @@ body {
 }
 
 .hero-star-2 {
-  transform: rotate(-7.48deg);
   position: absolute;
   bottom: 0;
   left: 0px;
@@ -543,7 +542,6 @@ body {
 }
 
 .team-star-1 {
-  transform: rotate(-7.48deg);
   position: absolute;
   top: 0px;
   left: 0px;
