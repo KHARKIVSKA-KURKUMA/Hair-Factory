@@ -542,12 +542,12 @@ body {
 }
 
 .team-star-1 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .team-star-1 {
+    display: block;
+    position: absolute;
     top: 0;
     left: 0px;
   }
@@ -1012,7 +1012,7 @@ body {
   position: relative;
 }
 .reviews img {
-  height: 167px;
+  height: 137px;
   border-radius: 25px;
 }
 
@@ -1049,7 +1049,7 @@ body {
 }
 
 .review-wrap {
-  height: 230px;
+  height: 200px;
   display: flex;
   background-color: #e3d3bb;
   align-items: flex-start;
