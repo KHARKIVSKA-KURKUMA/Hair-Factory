@@ -17,6 +17,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+    align-items: flex-start;
   }
   @include tablet {
     justify-content: space-evenly;

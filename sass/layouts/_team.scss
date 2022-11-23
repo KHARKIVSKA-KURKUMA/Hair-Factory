@@ -115,3 +115,38 @@
     }
   }
 }
+.carousel-mob .owl-nav .owl-prev,
+.carousel-mob .owl-nav .owl-next {
+  position: absolute;
+  cursor: pointer;
+  font-size: 60px !important;
+  color: #fff !important;
+  top: 0;
+  height: 100%;
+  width: 70px;
+  transition: 0.3s opacity ease;
+  opacity: 0.6;
+  margin: 0;
+  padding: 0;
+  @include desktop {
+    display: none;
+  }
+}
+.carousel-mob .owl-nav .owl-prev:hover,
+.carousel-mob .owl-nav .owl-next:hover {
+  opacity: 1;
+}
+.carousel-mob .owl-nav .owl-prev,
+.carousel-mob .owl-nav .owl-prev:hover {
+  left: 0;
+}
+.carousel-mob .owl-nav .owl-next,
+.carousel-mob .owl-nav .owl-next:hover {
+  right: 0;
+}
+.carousel-mob .owl-dots.disabled,
+.carousel-mob .owl-nav.disabled {
+  @include desktop {
+    display: none;
+  }
+}

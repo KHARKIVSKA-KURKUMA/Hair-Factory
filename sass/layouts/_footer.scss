@@ -74,8 +74,8 @@
 }
 .meta-soc-icon {
   transition: fill $transition;
-  .meta-soc-link &:hover,
-  .meta-soc-link &:focus {
+  .meta-soc-link:hover &,
+  .meta-soc-link:focus & {
     fill: $lightRed;
   }
 }
@@ -99,6 +99,7 @@
   width: 290px;
   height: 400px;
   margin: 0 auto;
+  background-color: $mapOpacity;
   @include mobile {
     width: 460px;
   }

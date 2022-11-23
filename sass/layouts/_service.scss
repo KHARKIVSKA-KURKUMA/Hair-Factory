@@ -2,7 +2,6 @@
   background: $desertStorm;
   .container {
     padding-top: 104px;
-    padding-bottom: 64px;
   }
 }
 .services-title {
@@ -43,4 +42,89 @@
 .carousel .owl-nav .owl-next,
 .carousel .owl-nav .owl-next:hover {
   right: 0;
+}
+
+.price-wrap {
+  padding-top: 60px;
+  background-image: $bgGradient, url(../img/price-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  padding-bottom: 64px;
+  @include desktop {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+.price-headline {
+  font-family: 'Oranienbaum';
+  @include text-base(400, 62px, 0.85);
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin-bottom: 10px;
+  @include tablet {
+    @include text-base(400, 72px, 0.85);
+  }
+}
+.price-block {
+  margin-bottom: 30px;
+  position: relative;
+  max-width: 100%;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  @include tablet {
+  }
+  @include desktop {
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+}
+.price-type-service {
+  @include text-base(null, 30px, 0.85);
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $lightBlack;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $lightBlack;
+  }
+  @include tablet {
+    @include text-base(null, 35px, 0.85);
+  }
+}
+.type-price-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.type {
+  padding-left: 10px;
+  @include text-base(null, 15px, 1.4);
+  @include mobile {
+    @include text-base(null, 17px, 1.4);
+  }
+  @include tablet {
+    @include text-base(null, 20px, 1.4);
+  }
+}
+.price {
+  @include text-base(null, 15px, 1.4);
+  @include tablet {
+    @include text-base(null, 20px, 1.4);
+  }
 }

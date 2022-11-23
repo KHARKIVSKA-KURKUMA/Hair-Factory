@@ -673,6 +673,49 @@ body {
   }
 }
 
+.carousel-mob .owl-nav .owl-prev,
+.carousel-mob .owl-nav .owl-next {
+  position: absolute;
+  cursor: pointer;
+  font-size: 60px !important;
+  color: #fff !important;
+  top: 0;
+  height: 100%;
+  width: 70px;
+  transition: 0.3s opacity ease;
+  opacity: 0.6;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 1200px) {
+  .carousel-mob .owl-nav .owl-prev,
+.carousel-mob .owl-nav .owl-next {
+    display: none;
+  }
+}
+
+.carousel-mob .owl-nav .owl-prev:hover,
+.carousel-mob .owl-nav .owl-next:hover {
+  opacity: 1;
+}
+
+.carousel-mob .owl-nav .owl-prev,
+.carousel-mob .owl-nav .owl-prev:hover {
+  left: 0;
+}
+
+.carousel-mob .owl-nav .owl-next,
+.carousel-mob .owl-nav .owl-next:hover {
+  right: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .carousel-mob .owl-dots.disabled,
+.carousel-mob .owl-nav.disabled {
+    display: none;
+  }
+}
+
 .summary {
   background-color: #fff8f8;
 }
@@ -697,6 +740,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 768px) {
@@ -766,7 +810,6 @@ body {
 }
 .services .container {
   padding-top: 104px;
-  padding-bottom: 64px;
 }
 
 .services-title {
@@ -815,6 +858,120 @@ body {
 .carousel .owl-nav .owl-next,
 .carousel .owl-nav .owl-next:hover {
   right: 0;
+}
+
+.price-wrap {
+  padding-top: 60px;
+  background-image: linear-gradient(rgba(239, 230, 221, 0.9), rgba(239, 230, 221, 0.9)), url(../img/price-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  padding-bottom: 64px;
+}
+@media screen and (min-width: 1200px) {
+  .price-wrap {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
+.price-headline {
+  font-family: "Oranienbaum";
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 0.85;
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .price-headline {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 0.85;
+  }
+}
+
+.price-block {
+  margin-bottom: 30px;
+  position: relative;
+  max-width: 100%;
+}
+.price-block:last-of-type {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 1200px) {
+  .price-block {
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+}
+
+.price-type-service {
+  font-size: 30px;
+  line-height: 0.85;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+.price-type-service::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #4e4e4e;
+}
+.price-type-service::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #4e4e4e;
+}
+@media screen and (min-width: 768px) {
+  .price-type-service {
+    font-size: 35px;
+    line-height: 0.85;
+  }
+}
+
+.type-price-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.type {
+  padding-left: 10px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+@media screen and (min-width: 480px) {
+  .type {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+}
+@media screen and (min-width: 768px) {
+  .type {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.price {
+  font-size: 15px;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .price {
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
 
 .sign {
@@ -1007,7 +1164,7 @@ body {
   background-color: #fff8f8;
 }
 .reviews .container {
-  padding-top: 64px;
+  padding-top: 104px;
   padding-bottom: 130px;
   position: relative;
 }
@@ -1459,7 +1616,7 @@ body {
 .meta-soc-icon {
   transition: fill 300ms linear;
 }
-.meta-soc-link .meta-soc-icon:hover, .meta-soc-link .meta-soc-icon:focus {
+.meta-soc-link:hover .meta-soc-icon, .meta-soc-link:focus .meta-soc-icon {
   fill: #b07875;
 }
 
@@ -1490,6 +1647,7 @@ body {
   width: 290px;
   height: 400px;
   margin: 0 auto;
+  background-color: rgba(105, 128, 121, 0.9);
 }
 @media screen and (min-width: 480px) {
   .map-container {
