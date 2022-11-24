@@ -45,33 +45,3 @@
 .carousel-2 .owl-item.center .owl-pic img {
   opacity: 1;
 }
-.carousel-2 .owl-nav .owl-prev,
-.carousel-2 .owl-nav .owl-next {
-  position: absolute;
-  cursor: pointer;
-  font-size: 60px !important;
-  color: #fff !important;
-  top: 0;
-  height: 100%;
-  width: 70px;
-  transition: 0.3s opacity ease;
-  opacity: 0.6;
-  margin: 0;
-  padding: 0;
-  display: none;
-  @include desktop {
-    display: block;
-  }
-}
-.carousel-2 .owl-nav .owl-prev:hover,
-.carousel-2 .owl-nav .owl-next:hover {
-  opacity: 1;
-}
-.carousel-2 .owl-nav .owl-prev,
-.carousel-2 .owl-nav .owl-prev:hover {
-  left: 0;
-}
-.carousel-2 .owl-nav .owl-next,
-.carousel-2 .owl-nav .owl-next:hover {
-  right: 0;
-}
