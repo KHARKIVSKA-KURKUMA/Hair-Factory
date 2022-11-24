@@ -62,7 +62,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 200px;
+  gap: 180px;
 }
 .header-menu-list {
   display: flex;
@@ -89,12 +89,17 @@
   @include text-base(null, 25px, 1.4);
   color: $lightBlack;
 }
-.header-enroll-btn {
-  @include text-base(null, 25px, 1.4);
+.header-call-btn {
+  @include text-base(null, 35px, 1.4);
   width: 230px;
   height: 60px;
   background-color: $lightOrange;
   color: $desertStorm;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* -------------------------------------------------------------------------- */
