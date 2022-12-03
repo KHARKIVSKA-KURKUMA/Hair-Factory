@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
+
+    <script src="./index.js"></script>
   </head>
   <body no-scroll>
     <!-- ------------------------------- header -------------------------------- -->
@@ -612,7 +614,7 @@
           />
           <div class="consultation-wrap">
             <h2 class="consultation-title">Free consultation</h2>
-            <form class="consultation-form">
+            <form id="consultation-form" class="consultation-form">
               <label for="user-name" class="consultation-label"
                 >Fill out the form and we will call you back in a minute!</label
               >
@@ -636,7 +638,7 @@
                   id="user-question"
                   placeholder="Your question"
                 ></textarea>
-                <button type="button" class="consultation-btn btn">
+                <button type="submit" class="consultation-btn btn">
                   Enroll
                 </button>
               </div>
