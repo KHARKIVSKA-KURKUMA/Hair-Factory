@@ -19,7 +19,8 @@
 }
 .carousel-2 .owl-nav .owl-prev:hover,
 .carousel-2 .owl-nav .owl-next:hover {
-  opacity: 0.1;
+  background-color: transparent;
+  opacity: 0.3;
 }
 .carousel-2 .owl-nav .owl-prev,
 .carousel-2 .owl-nav .owl-prev:hover {
@@ -49,6 +50,7 @@
 }
 .carousel-mob .owl-nav .owl-prev:hover,
 .carousel-mob .owl-nav .owl-next:hover {
+  background-color: transparent;
   opacity: 0.2;
 }
 .carousel-mob .owl-nav .owl-prev,
@@ -83,7 +85,8 @@
 }
 .carousel .owl-nav .owl-prev:hover,
 .carousel .owl-nav .owl-next:hover {
-  opacity: 0.1;
+  opacity: 0.4;
+  background-color: transparent;
 }
 .carousel .owl-nav .owl-prev,
 .carousel .owl-nav .owl-prev:hover {

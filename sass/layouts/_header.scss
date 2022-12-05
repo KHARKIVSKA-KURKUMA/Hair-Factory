@@ -89,13 +89,24 @@
   @include text-base(null, 25px, 1.4);
   color: $lightBlack;
 }
-.header-call-btn {
+.header-call-btn-mob {
   @include text-base(null, 35px, 1.4);
   width: 230px;
   height: 60px;
   background-color: $lightOrange;
   color: $desertStorm;
   border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-btn-mob {
+  @include text-base(null, 35px, 1.4);
+  width: 230px;
+  height: 60px;
+  background-color: $lightOrange;
+  color: $desertStorm;
   display: flex;
   flex-direction: column;
   justify-content: center;

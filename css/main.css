@@ -97,7 +97,8 @@ body {
 
 .carousel-2 .owl-nav .owl-prev:hover,
 .carousel-2 .owl-nav .owl-next:hover {
-  opacity: 0.1;
+  background-color: transparent;
+  opacity: 0.3;
 }
 
 .carousel-2 .owl-nav .owl-prev,
@@ -133,6 +134,7 @@ body {
 
 .carousel-mob .owl-nav .owl-prev:hover,
 .carousel-mob .owl-nav .owl-next:hover {
+  background-color: transparent;
   opacity: 0.2;
 }
 
@@ -169,7 +171,8 @@ body {
 
 .carousel .owl-nav .owl-prev:hover,
 .carousel .owl-nav .owl-next:hover {
-  opacity: 0.1;
+  opacity: 0.4;
+  background-color: transparent;
 }
 
 .carousel .owl-nav .owl-prev,
@@ -375,7 +378,7 @@ body {
   color: #4e4e4e;
 }
 
-.header-call-btn {
+.header-call-btn-mob {
   font-size: 35px;
   line-height: 1.4;
   width: 230px;
@@ -383,6 +386,19 @@ body {
   background-color: #d4b195;
   color: #efe6dd;
   border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-btn-mob {
+  font-size: 35px;
+  line-height: 1.4;
+  width: 230px;
+  height: 60px;
+  background-color: #d4b195;
+  color: #efe6dd;
   display: flex;
   flex-direction: column;
   justify-content: center;
