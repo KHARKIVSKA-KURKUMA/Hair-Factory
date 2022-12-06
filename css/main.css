@@ -277,11 +277,6 @@ body {
   padding-top: 22px;
   align-items: center;
 }
-@media screen and (min-width: 1200px) {
-  .header .container {
-    padding-top: 32px;
-  }
-}
 
 .header-logo {
   fill: transparent;
@@ -294,7 +289,7 @@ body {
   display: flex;
   z-index: 1;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .menu-open-btn {
     display: none;
   }
@@ -313,7 +308,7 @@ body {
   width: 100vw;
   height: 100vh;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header__menu__mobile {
     display: none;
   }
@@ -397,7 +392,7 @@ body {
   line-height: 1.4;
   width: 230px;
   height: 60px;
-  background-color: #d4b195;
+  background-color: #b07875;
   color: #efe6dd;
   display: flex;
   flex-direction: column;
@@ -409,7 +404,7 @@ body {
 .header-wrap {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header-wrap {
     display: flex;
     align-items: center;
@@ -431,17 +426,20 @@ body {
 .header-link:hover, .header-link:focus {
   color: #d4b195;
 }
-@media screen and (min-width: 768px) {
-  .header-link {
-    font-size: 12px;
-    line-height: 1.4;
-  }
-}
 @media screen and (min-width: 1200px) {
   .header-link {
     font-size: 12px;
     line-height: 1.4;
+    padding-top: 4px;
   }
+}
+
+.header-icon-phone {
+  fill: #4e4e4e;
+  transition: fill 300ms linear;
+}
+.header-link:hover .header-icon-phone, .header-link:focus .header-icon-phone {
+  fill: #d4b195;
 }
 
 .enroll-info-header {
@@ -455,7 +453,7 @@ body {
   font-size: 15px;
   line-height: 1.4;
   height: 33px;
-  background-color: #d4b195;
+  background-color: #b07875;
   color: #efe6dd;
   z-index: 1;
   display: flex;
@@ -466,6 +464,10 @@ body {
   .header-btn {
     padding-top: 2px;
   }
+}
+
+.header-call-btn {
+  background-color: #d4b195;
 }
 
 @media screen and (min-width: 1440px) {
@@ -1574,11 +1576,32 @@ body {
   border: 1px solid #b07875;
 }
 
+.meta-icon {
+  fill: #4e4e4e;
+  margin-right: 10px;
+}
+
 .meta-soc-icon {
   transition: fill 300ms linear;
 }
 .meta-soc-link:hover .meta-soc-icon, .meta-soc-link:focus .meta-soc-icon {
   fill: #b07875;
+}
+
+.fac {
+  fill: #1877f2;
+}
+
+.tel {
+  fill: #2ca5e0;
+}
+
+.vib {
+  fill: #665cac;
+}
+
+.in {
+  fill: #e4405f;
 }
 
 .map {

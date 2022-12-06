@@ -5,9 +5,6 @@
     justify-content: space-between;
     padding-top: 22px;
     align-items: center;
-    @include desktop {
-      padding-top: 32px;
-    }
   }
 }
 .header-logo {
@@ -19,13 +16,14 @@
   align-items: center;
   display: flex;
   z-index: 1;
-  @include tablet {
+  @include desktop {
     display: none;
   }
 }
 .open-menu-icon {
   fill: $lightOrange;
 }
+
 // мобільне меню
 .header__menu__mobile {
   position: fixed;
@@ -35,7 +33,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  @include tablet {
+  @include desktop {
     display: none;
   }
 }
@@ -105,7 +103,7 @@
   @include text-base(null, 35px, 1.4);
   width: 230px;
   height: 60px;
-  background-color: $lightOrange;
+  background-color: $lightRed;
   color: $desertStorm;
   display: flex;
   flex-direction: column;
@@ -116,7 +114,7 @@
 /* -------------------------------------------------------------------------- */
 .header-wrap {
   display: none;
-  @include tablet {
+  @include desktop {
     display: flex;
     align-items: center;
   }
@@ -134,11 +132,17 @@
   }
   @include text-base(null, 15px, 1.4);
   color: $lightBlack;
-  @include tablet {
-    @include text-base(null, 12px, 1.4);
-  }
   @include desktop {
     @include text-base(null, 12px, 1.4);
+    padding-top: 4px;
+  }
+}
+.header-icon-phone {
+  fill: $lightBlack;
+  transition: fill $transition;
+  .header-link:hover &,
+  .header-link:focus & {
+    fill: $lightOrange;
   }
 }
 .enroll-info-header {
@@ -150,7 +154,7 @@
   width: 137px;
   @include text-base(null, 15px, 1.4);
   height: 33px;
-  background-color: $lightOrange;
+  background-color: $lightRed;
   color: $desertStorm;
   z-index: 1;
   display: flex;
@@ -159,6 +163,9 @@
   @include desktop-2 {
     padding-top: 2px;
   }
+}
+.header-call-btn {
+  background-color: $lightOrange;
 }
 .another {
   @include desktop-2 {
