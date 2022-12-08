@@ -10,6 +10,40 @@
 .header-logo {
   fill: transparent;
 }
+.ua-en-list {
+  display: none;
+  @include desktop {
+    display: flex;
+    gap: 20px;
+    :nth-last-child(1) {
+      ::after {
+        display: none;
+      }
+    }
+  }
+}
+.ua-en-item {
+  position: relative;
+  ::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    bottom: 0;
+    right: -12px;
+    background-color: $lightBlack;
+    border-radius: 25%;
+  }
+}
+.en-ua-link {
+  transition: color $transition;
+  @include text-base(null, 13px, 1.4);
+  color: $lightBlack;
+  &:hover,
+  &:focus {
+    color: $lightOrange;
+  }
+}
 .menu-open-btn {
   background-color: transparent;
   border: transparent;
@@ -25,6 +59,32 @@
 }
 
 // мобільне меню
+.ua-en-list-mob {
+  display: flex;
+  gap: 20px;
+  :nth-last-child(1) {
+    ::after {
+      display: none;
+    }
+  }
+}
+.ua-en-item-mob {
+  position: relative;
+  ::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    bottom: 0;
+    right: -12px;
+    background-color: $lightBlack;
+    border-radius: 25%;
+  }
+}
+.en-ua-link-mob {
+  @include text-base(null, 30px, 1.4);
+  color: $lightBlack;
+}
 .header__menu__mobile {
   position: fixed;
   z-index: 122;
@@ -56,11 +116,11 @@
   }
 }
 .js-menu-container {
-  padding-top: 80px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 180px;
+  gap: 100px;
 }
 .header-menu-list {
   display: flex;
@@ -171,4 +231,14 @@
   @include desktop-2 {
     padding-top: 2px;
   }
+}
+.header-icon-phone-2 {
+  fill: $desertStorm;
+  margin-left: 4px;
+}
+.ua {
+  color: $lightOrange;
+}
+.en {
+  color: $lightOrange;
 }

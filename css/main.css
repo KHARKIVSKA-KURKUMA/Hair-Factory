@@ -282,6 +282,43 @@ body {
   fill: transparent;
 }
 
+.ua-en-list {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .ua-en-list {
+    display: flex;
+    gap: 20px;
+  }
+  .ua-en-list :nth-last-child(1) ::after {
+    display: none;
+  }
+}
+
+.ua-en-item {
+  position: relative;
+}
+.ua-en-item ::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  bottom: 0;
+  right: -12px;
+  background-color: #4e4e4e;
+  border-radius: 25%;
+}
+
+.en-ua-link {
+  transition: color 300ms linear;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #4e4e4e;
+}
+.en-ua-link:hover, .en-ua-link:focus {
+  color: #d4b195;
+}
+
 .menu-open-btn {
   background-color: transparent;
   border: transparent;
@@ -297,6 +334,34 @@ body {
 
 .open-menu-icon {
   fill: #d4b195;
+}
+
+.ua-en-list-mob {
+  display: flex;
+  gap: 20px;
+}
+.ua-en-list-mob :nth-last-child(1) ::after {
+  display: none;
+}
+
+.ua-en-item-mob {
+  position: relative;
+}
+.ua-en-item-mob ::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  bottom: 0;
+  right: -12px;
+  background-color: #4e4e4e;
+  border-radius: 25%;
+}
+
+.en-ua-link-mob {
+  font-size: 30px;
+  line-height: 1.4;
+  color: #4e4e4e;
 }
 
 .header__menu__mobile {
@@ -335,11 +400,11 @@ body {
 }
 
 .js-menu-container {
-  padding-top: 80px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 180px;
+  gap: 100px;
 }
 
 .header-menu-list {
@@ -474,6 +539,19 @@ body {
   .another {
     padding-top: 2px;
   }
+}
+
+.header-icon-phone-2 {
+  fill: #efe6dd;
+  margin-left: 4px;
+}
+
+.ua {
+  color: #d4b195;
+}
+
+.en {
+  color: #d4b195;
 }
 
 .hero {
@@ -621,6 +699,27 @@ body {
 @media screen and (min-width: 1200px) {
   .hero-btn {
     font-size: 25px;
+    line-height: 1.4;
+  }
+}
+
+.hero-btn-ua {
+  background-color: #b07875;
+  color: #efe6dd;
+  padding: 10px 20px;
+  z-index: 1;
+  font-size: 15px;
+  line-height: 1.4;
+}
+@media screen and (min-width: 480px) {
+  .hero-btn-ua {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-btn-ua {
+    font-size: 15px;
     line-height: 1.4;
   }
 }

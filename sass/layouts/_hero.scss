@@ -101,3 +101,16 @@
     @include text-base(null, 25px, 1.4);
   }
 }
+.hero-btn-ua {
+  background-color: $lightRed;
+  color: $desertStorm;
+  padding: 10px 20px;
+  z-index: 1;
+  @include text-base(null, 15px, 1.4);
+  @include mobile {
+    @include text-base(null, 25px, 1.4);
+  }
+  @include desktop {
+    @include text-base(null, 15px, 1.4);
+  }
+}
