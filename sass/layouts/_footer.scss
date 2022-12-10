@@ -72,12 +72,28 @@
     border: 1px solid $lightRed;
   }
 }
+.meta-icon {
+  fill: $lightBlack;
+  margin-right: 10px;
+}
 .meta-soc-icon {
   transition: fill $transition;
   .meta-soc-link:hover &,
   .meta-soc-link:focus & {
     fill: $lightRed;
   }
+}
+.fac {
+  fill: #1877f2;
+}
+.tel {
+  fill: #2ca5e0;
+}
+.vib {
+  fill: #665cac;
+}
+.in {
+  fill: #e4405f;
 }
 .map {
   border-radius: 72px;
