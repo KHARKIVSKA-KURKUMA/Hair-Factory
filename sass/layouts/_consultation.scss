@@ -31,6 +31,18 @@
     right: 0;
   }
 }
+.consultation-star-ua {
+  display: none;
+  @include desktop {
+    display: block;
+    position: absolute;
+    top: 230px;
+    right: 0px;
+  }
+  @include desktop-2 {
+    top: 55px;
+  }
+}
 .consultation-wrap {
   margin-top: 40px;
   @include desktop {
@@ -61,6 +73,16 @@
     text-align: left;
   }
 }
+.consultation-label-ua {
+  @include text-base(700, 15px, 1.4);
+  color: $lightGreen;
+  margin-bottom: 32px;
+  display: block;
+  @include tablet {
+    @include text-base(700, 20px, 1.4);
+    text-align: center;
+  }
+}
 .communication-form {
   display: flex;
   flex-direction: column;
@@ -80,9 +102,13 @@
   width: 100%;
   border-radius: 24px;
   padding-left: 10px;
-  transition: border $transition;
+  transition: outline, border $transition;
   &::placeholder {
     @include text-base(null, 16px, 1.25);
+  }
+  &:focus {
+    outline: 2px solid $lightRed;
+    border: transparent;
   }
   @include tablet {
     width: 430px;
@@ -90,6 +116,10 @@
   @include desktop {
     padding-left: 15px;
     width: 400px;
+  }
+  @include desktop-2 {
+    width: 100%;
+    z-index: 10;
   }
 }
 .form-input-question {
@@ -100,8 +130,12 @@
   border-radius: 4px;
   resize: none;
   padding: 12px 16px;
-  transition: outline-color $transition;
   border-radius: 24px;
+  transition: outline, border $transition;
+  &:focus {
+    outline: 2px solid $lightRed;
+    border: transparent;
+  }
   @include tablet {
     width: 530px;
   }

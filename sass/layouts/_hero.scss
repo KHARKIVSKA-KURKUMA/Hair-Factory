@@ -11,13 +11,11 @@
     padding-bottom: 64px;
     @include desktop {
       flex-direction: row;
+      justify-content: space-between;
       img {
         width: 538px;
         height: 538px;
       }
-    }
-    @include desktop-2 {
-      justify-content: space-between;
     }
   }
 }
