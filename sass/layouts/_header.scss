@@ -82,7 +82,7 @@
   }
 }
 .en-ua-link-mob {
-  @include text-base(null, 30px, 1.4);
+  @include text-base(null, 25px, 1.4);
   color: $lightBlack;
 }
 .header__menu__mobile {
@@ -116,7 +116,7 @@
   }
 }
 .js-menu-container {
-  padding-top: 100px;
+  padding-top: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,7 +129,7 @@
 }
 .header-menu-link-nav {
   padding: 15px 0;
-  @include text-base(null, 25px, 1.4);
+  @include text-base(null, 20px, 1.4);
   color: $lightBlack;
   text-transform: uppercase;
   transition: color $transition;
@@ -144,13 +144,13 @@
   gap: 20px;
 }
 .header-menu-link {
-  @include text-base(null, 25px, 1.4);
+  @include text-base(null, 20px, 1.4);
   color: $lightBlack;
 }
 .header-call-btn-mob {
-  @include text-base(null, 35px, 1.4);
-  width: 230px;
-  height: 60px;
+  @include text-base(null, 25px, 1.4);
+  width: 200px;
+  height: 50px;
   background-color: $lightOrange;
   color: $desertStorm;
   border-radius: 24px;
@@ -160,9 +160,9 @@
   align-items: center;
 }
 .header-btn-mob {
-  @include text-base(null, 35px, 1.4);
-  width: 230px;
-  height: 60px;
+  @include text-base(null, 25px, 1.4);
+  width: 200px;
+  height: 50px;
   background-color: $lightRed;
   color: $desertStorm;
   display: flex;
