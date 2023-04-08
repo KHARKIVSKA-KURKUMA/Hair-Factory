@@ -1,0 +1,2 @@
+window.addEventListener("load",(async t=>{const e=document.getElementById("consultation-form");e.addEventListener("submit",(async t=>{t.preventDefault();const n=await fetch("http://localhost:8080/enroll",{method:"POST",headers:{"Content-type":"application/json;charset=UTF-8"},body:JSON.stringify(Object.fromEntries(new FormData(e)))});if(!n.ok)return;const o=await n.text();alert(o)}))}));
+//# sourceMappingURL=ua.09bb052b.js.map

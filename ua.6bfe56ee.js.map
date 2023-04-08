@@ -1,0 +1,1 @@
+{"mappings":"AAAAA,EAAE,iBAAiBC,YAAY,CAC7BC,OAAQ,GACRC,KAAK,EACLC,MAAM,EACNC,WAAW,EACXC,MAAO","sources":["src/js/slider.js"],"sourcesContent":["$('.owl-carousel').owlCarousel({\n  margin: 20,\n  nav: true,\n  loop: true,\n  autoWidth: true,\n  items: 3,\n});\n"],"names":["$","owlCarousel","margin","nav","loop","autoWidth","items"],"version":3,"file":"ua.6bfe56ee.js.map"}
