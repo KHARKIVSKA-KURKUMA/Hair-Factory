@@ -37,11 +37,14 @@
 }
 .en-ua-link {
   transition: color $transition;
-  @include text-base(null, 13px, 1.4);
+  @include text-base(null, 15px, 1.4);
   color: $lightBlack;
   &:hover,
   &:focus {
     color: $lightOrange;
+  }
+  @include desktop-2 {
+    @include text-base(null, 18px, 1.4);
   }
 }
 .menu-open-btn {
@@ -193,8 +196,11 @@
   @include text-base(null, 15px, 1.4);
   color: $lightBlack;
   @include desktop {
-    @include text-base(null, 12px, 1.4);
+    @include text-base(null, 15px, 1.4);
     padding-top: 4px;
+  }
+  @include desktop-2 {
+    @include text-base(null, 18px, 1.4);
   }
 }
 .header-icon-phone {

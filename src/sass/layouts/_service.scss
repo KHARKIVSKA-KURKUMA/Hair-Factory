@@ -1,7 +1,12 @@
 .services {
   background: $desertStorm;
   .container {
-    padding-top: 104px;
+    padding-top: 80px;
+  }
+  .services-slider {
+    img {
+      border-radius: 30px;
+    }
   }
 }
 .services-title {

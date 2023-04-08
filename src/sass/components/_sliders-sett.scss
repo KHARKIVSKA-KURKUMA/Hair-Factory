@@ -1,0 +1,46 @@
+/* ---------------------------------- team ---------------------------------- */
+.team-mobile-slider,
+.services-slider {
+  .owl-dots {
+    &,
+    .owl-dot {
+      cursor: url(../img/cursor-hover.cur), default;
+    }
+  }
+  .owl-nav {
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      cursor: url(../img/cursor-map.cur), default;
+      font-size: 60px !important;
+      color: #fff !important;
+      top: 0;
+      height: 100%;
+      width: 70px;
+      transition: opacity $transition;
+      opacity: 0.6;
+      margin: 0;
+      padding: 0;
+      display: none;
+      &:hover {
+        background-color: transparent;
+        opacity: 0.3;
+      }
+      @include desktop {
+        display: block;
+      }
+    }
+    .owl-prev {
+      &,
+      &:hover {
+        left: 0;
+      }
+    }
+    .owl-next {
+      &,
+      &:hover {
+        right: 0;
+      }
+    }
+  }
+}

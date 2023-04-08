@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Hair Factory</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,11 +18,36 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- ----------------------------------------------------------------------- -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- ----------------------------------------------------------------------- -->
     <link rel="stylesheet" href="./owl/owl.carousel.min.css" />
     <link rel="stylesheet" href="./owl/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./sass/index.scss" />
-
-    
   </head>
   <body no-scroll>
     <!-- ------------------------------- header -------------------------------- -->
@@ -217,7 +242,7 @@
           <p class="services-desk">
             We only work with hair, but we do it amazingly well
           </p>
-          <div class="carousel owl-carousel owl-theme">
+          <div class="services-slider owl-carousel owl-theme">
             <div class="item" style="width: 224px">
               <img
                 src="./img/img-1.jpg"
@@ -259,7 +284,6 @@
               />
             </div>
           </div>
-
           <!-- price -->
           <div class="price-wrap">
             <h3 class="price-headline">Price</h3>
@@ -348,103 +372,59 @@
           <p class="team-desk">
             Hairdressers-colorists with 10+ years of experience
           </p>
-          <!-- ------------------------------- mob-car ------------------------------- -->
-          <div class="carousel-mob owl-carousel owl-theme">
+          <div class="team-mobile-slider owl-carousel owl-theme">
             <div class="item" style="width: 360px">
               <a href="#link" class="team-mob-link link">
-                <img
-                  srcset="./img/ksenia.jpg 1x, ./img/ksenia.jpg 2x"
-                  src="./img/ksenia.jpg"
-                  alt="ksenia"
-                  width="417"
-                  height="370"
-                />
-              </a>
-              <div class="team-mob-about">
-                <h3 class="team-name">Ksenia Boltushkina</h3>
-                <p class="about-her">hairdressing technologist</p>
-              </div>
+                <div class="team-holder">
+                  <img
+                    srcset="./img/ksenia.jpg 1x, ./img/ksenia.jpg 2x"
+                    src="./img/ksenia.jpg"
+                    alt="ksenia"
+                    width="417"
+                    height="370"
+                  />
+                  <div class="team-about">
+                    <h3 class="team-name">Ksenia Boltushkina</h3>
+                    <p class="about-her">hairdressing technologist</p>
+                  </div>
+                </div></a
+              >
             </div>
             <div class="item" style="width: 360px">
               <a href="#link" class="team-mob-link link">
-                <img
-                  srcset="./img/natasha.jpg 1x, ./img/natasha-2x.jpg 2x"
-                  src="./img/natasha.jpg"
-                  width="417"
-                  height="370"
-                />
+                <div class="team-holder">
+                  <img
+                    srcset="./img/natasha.jpg 1x, ./img/natasha-2x.jpg 2x"
+                    src="./img/natasha.jpg"
+                    width="417"
+                    height="370"
+                  />
+                  <div class="team-about">
+                    <h3 class="team-name">Natasha Uglova</h3>
+                    <p class="about-her">hairdressing technologist</p>
+                  </div>
+                </div>
               </a>
-              <div class="team-mob-about">
-                <h3 class="team-name">Natasha Uglova</h3>
-                <p class="about-her">hairdressing technologist</p>
-              </div>
             </div>
             <div class="item" style="width: 360px">
               <a href="#link" class="team-mob-link link">
-                <img
-                  ssrcset="./img/violeta.jpg 1x, ./img/violeta-2x.jpg 2x"
-                  src="./img/violeta.jpg"
-                  width="417"
-                  height="370"
-                />
+                <div class="team-holder">
+                  <img
+                    ssrcset="./img/violeta.jpg 1x, ./img/violeta-2x.jpg 2x"
+                    src="./img/violeta.jpg"
+                    width="417"
+                    height="370"
+                  />
+                  <div class="team-about">
+                    <h3 class="team-name">Violetta Shurygina</h3>
+                    <p class="about-her">hairdressing technologist</p>
+                  </div>
+                </div>
               </a>
-              <div class="team-mob-about">
-                <h3 class="team-name">Violetta Shurygina</h3>
-                <p class="about-her">hairdressing technologist</p>
-              </div>
             </div>
           </div>
+
           <!-- ----------------------------------------------------------------------- -->
-          <div class="carousel-2 owl-carousel owl-theme">
-            <a href="#link" class="team-link link">
-              <div class="owl-pic">
-                <img
-                  srcset="./img/ksenia.jpg 1x, ./img/ksenia.jpg 2x"
-                  src="./img/ksenia.jpg"
-                  alt="ksenia"
-                  width="417"
-                  height="370"
-                />
-              </div>
-              <div class="team-about">
-                <h3 class="team-name">Ksenia Boltushkina</h3>
-                <p class="about-her">hairdressing technologist</p>
-                <button type="btn" class="team-btn btn">Sign up</button>
-              </div>
-            </a>
-            <a href="#link" class="team-link link">
-              <div class="owl-pic">
-                <img
-                  srcset="./img/natasha.jpg 1x, ./img/natasha-2x.jpg 2x"
-                  src="./img/natasha.jpg"
-                  alt="natasha"
-                  width="417"
-                  height="370"
-                />
-              </div>
-              <div class="team-about">
-                <h3 class="team-name">Natasha Uglova</h3>
-                <p class="about-her">hairdressing technologist</p>
-                <button type="btn" class="team-btn btn">Sign up</button>
-              </div>
-            </a>
-            <a href="#link" class="team-link link">
-              <div class="owl-pic">
-                <img
-                  srcset="./img/violeta.jpg 1x, ./img/violeta-2x.jpg 2x"
-                  src="./img/violeta.jpg"
-                  alt="violeta"
-                  width="417"
-                  height="370"
-                />
-              </div>
-              <div class="team-about">
-                <h3 class="team-name">Violetta Shurygina</h3>
-                <p class="about-her">hairdressing technologist</p>
-                <button type="btn" class="team-btn btn">Sign up</button>
-              </div>
-            </a>
-          </div>
         </div>
       </section>
       <!-- ----------------------------------------------------------------------- -->
@@ -482,7 +462,7 @@
             </defs>
             <use href="./img/icons.svg#icon-star" fill="url(#grad1)"></use>
           </svg>
-          <div class="carousel owl-carousel owl-theme">
+          <div class="services-slider owl-carousel owl-theme">
             <div class="item" style="width: 345px">
               <div class="review-wrap">
                 <img
@@ -577,7 +557,7 @@
           <h2 class="mini-portfolio-title">
             Beautiful images available to everyone
           </h2>
-          <div class="carousel owl-carousel owl-theme">
+          <div class="services-slider owl-carousel owl-theme">
             <div class="item" style="width: 370px">
               <div class="mini-wrap">
                 <img
@@ -757,11 +737,29 @@
           ></iframe>
         </div>
       </div>
+      <div class="watermark">
+        <p class="rights">
+          <a target="_blank" href="https://icons8.com/icon/TdbpMMmYMvER/cursor"
+            >Cursors</a
+          >
+          icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </p>
+        <p class="rights">
+          <a
+            target="_blank"
+            href="https://www.flaticon.com/free-icons/beauty-salon"
+            title="beauty salon icons"
+            >Beauty salon icons created by Freepik - Flaticon</a
+          >
+        </p>
+      </div>
+      <a class="up is-hidden" id="up" href="">⇪</a>
     </footer>
     <script src="./js/jquery-3.6.1.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/menu-mob.js"></script>
-    <script src="./index.js" type="module"></script>
+    <script src="./js/formSubmit.js" type="module"></script>
+    <script src="./js/up-btn.js"></script>
   </body>
 </html>

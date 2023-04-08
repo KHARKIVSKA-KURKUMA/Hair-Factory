@@ -1,6 +1,20 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: $lightBlack;
+  cursor: url(../img/cursor.cur), default;
+}
+label {
+  cursor: url(../img/cursor.cur), default;
+}
+input,
+textarea {
+  cursor: url(../img/cursor-input.cur), default;
+}
+a,
+button {
+  &:hover {
+    cursor: url(../img/cursor-hover.cur), default;
+  }
 }
 
 .link {

@@ -15,4 +15,7 @@
     width: 1440px;
     padding: 0 140px;
   }
+  @include desktop-3 {
+    width: 1660px;
+  }
 }
