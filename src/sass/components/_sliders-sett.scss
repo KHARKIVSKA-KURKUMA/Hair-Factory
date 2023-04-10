@@ -11,20 +11,20 @@
     .owl-prev,
     .owl-next {
       position: absolute;
-      cursor: url(../img/cursor-map.cur), default;
+      cursor: url(../img/cursor-hover.cur), default;
       font-size: 60px !important;
-      color: #fff !important;
+      color: $bgColor;
       top: 0;
       height: 100%;
       width: 70px;
       transition: opacity $transition;
-      opacity: 0.6;
+      opacity: 1;
       margin: 0;
       padding: 0;
       display: none;
       &:hover {
         background-color: transparent;
-        opacity: 0.3;
+        opacity: 0.5;
       }
       @include desktop {
         display: block;
