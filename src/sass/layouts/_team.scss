@@ -8,14 +8,6 @@
   img {
     border-radius: 24px;
   }
-  .services-slider {
-    .owl-nav {
-      .owl-prev,
-      .owl-next {
-        color: $lightBlack;
-      }
-    }
-  }
 }
 .team-star-1 {
   display: none;
@@ -101,6 +93,7 @@
   position: absolute;
   transform: translateY(100%);
   overflow: auto;
+  opacity: 0.9;
   background: $bgColor;
   border-radius: 24px;
   width: 100%;
@@ -109,7 +102,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  transition: transform $transition;
+  transition: transform 1000ms linear;
   .item:hover &,
   .item:focus & {
     transform: translateY(-100%);
