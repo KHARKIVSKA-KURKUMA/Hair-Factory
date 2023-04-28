@@ -1,2 +1,0 @@
-var upBtn=document.getElementById("up");function scrollFunction(){document.body.scrollTop>500||document.documentElement.scrollTop>500?(upBtn.style.display="flex",upBtn.classList.remove("is-hidden")):upBtn.style.display="none"}function topFunction(){document.body.scrollTop=0,document.documentElement.scrollTop=0}window.onscroll=function(){scrollFunction()},upBtn.addEventListener("click",topFunction);
-//# sourceMappingURL=ua.56f7c610.js.map
