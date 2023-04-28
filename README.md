@@ -6,4 +6,4 @@ Scrolling down the page, users can see information about the different services 
 
 The website is responsive, meaning that it adapts to different screen sizes and devices. It have been created using HTML, CSS, and JavaScript.
 
-Overall, the website provides a simple and effective way for potential customers to learn about the services offered by Hair Factory and make an appointment. The website is easy to navigate and provides all the necessary information about the salon's services, prices, and examples of their work.
+Overall, the website provides a simple and effective way for potential customers to learn about Hair Factory’s services and book an appointment. The website is easy to navigate and provides pertinent information about the salon's services, prices, and examples of their work.
